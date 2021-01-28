@@ -1,0 +1,64 @@
+<view class="{{[theme+'-page']}}">
+  <uni-bar vue-id="8dd740cc-1" theme="{{theme}}" bind:__l="__l" vue-slots="{{['default']}}">
+    <nar-bar vue-id="{{('8dd740cc-2')+','+('8dd740cc-1')}}" type="index" fixed="true"
+      data-event-opts="{{[['^white',[['white']]],['^black',[['black']]]]}}" bind:white="__e" bind:black="__e"
+      bind:__l="__l"></nar-bar>
+    <view class="swiperView"></view>
+    <swiper class="{{['swiper',theme+'-title-color']}}" previous-margin="200rpx" next-margin="200rpx"
+      autoplay="{{true}}" circular="{{true}}" data-event-opts="{{[['change',[['cardSwiper',['$event']]]]]}}"
+      bindchange="__e">
+      <block wx:for="{{swiperList}}" wx:for-item="item" wx:for-index="index" wx:key="index">
+        <swiper-item data-event-opts="{{[['tap',[['getDate',['$0'],[[['swiperList','',index]]]]]]]}}" bindtap="__e">
+          <image class="{{['le-img',(cardCur==index)?'le-active':'']}}" src="{{item.vod_pic}}" lazy-load="true"
+            webp="{{true}}"></image>
+          <view class="{{['le-name ellipsis',(cardCur==index)?'le-names':'']}}">{{item.vod_name}}</view>
+        </swiper-item>
+      </block>
+    </swiper>
+  </uni-bar>
+  <view class="box-shadow"></view>
+  <block wx:if="{{notice!==''}}">
+    <uni-notice-bar vue-id="8dd740cc-3" show-icon="{{true}}" scrollable="{{true}}" single="{{true}}" text="{{notice}}这里"
+      backgroundColor="{{[theme=='black'?'#323232':'#fffbe8']}}" bind:__l="__l"></uni-notice-bar>
+  </block>
+    <button class="shareButton" style="color:#ffaa7f;" open-type="share" hover-class="none">
+    <image class="shareImage" src="../../static/img/fx.png"></image>
+    </button>
+  <view style="width:750rpx;">
+    <official-account></official-account>
+  </view>
+  <block wx:for="{{movieInfo}}" wx:for-item="data" wx:for-index="i" wx:key="i">
+    <view>
+      <block wx:if="{{i==1&&wxAdId.ysId}}">
+        <custom-ad vue-id="{{'8dd740cc-4-'+i}}" ysId="{{wxAdId.ysId}}" bind:__l="__l"></custom-ad>
+      </block>
+      <block wx:if="{{!wxverify}}">
+        <view class="movieH "><text class="webkit-text">{{data.type_name}}</text><text
+            data-event-opts="{{[['tap',[['typeTab',['$0','$1'],[[['movieInfo','',i,'type_id']],[['movieInfo','',i,'type_name']]]]]]]}}"
+            class="cuIcon webkit-text" style="font-size:28rpx;" bindtap="__e">查看更多 </text></view>
+      </block>
+      <view class="movieBox">
+        <block wx:for="{{data.list}}" wx:for-item="item" wx:for-index="index" wx:key="index">
+          <view class="movieList">
+            <vod-item vue-id="{{'8dd740cc-5-'+i+'-'+index}}" item="{{item}}" theme="{{theme}}" bind:__l="__l">
+            </vod-item>
+          </view>
+        </block>
+      </view>
+    </view>
+  </block>
+  <struggler-uniapp-add-tip vue-id="8dd740cc-6" showTip="{{showTip}}" bind:__l="__l"></struggler-uniapp-add-tip>
+  <uni-popup class="vue-ref" vue-id="8dd740cc-7" type="center" data-ref="tanchuang" bind:__l="__l"
+    vue-slots="{{['default']}}">
+    <view class="tanchuang">
+      <image class="tanchuang-img" src="{{tanchuang.image}}" show-menu-by-longpress="{{true}}"
+        data-event-opts="{{[['tap',[['ggImage',['$0','$1'],['tanchuang.type','tanchuang.url']]]]]}}" bindtap="__e">
+      </image><button data-event-opts="{{[['tap',[['tcTab']]]]}}" class="tanchuang-button" bindtap="__e">关闭</button>
+    </view>
+  </uni-popup>
+</view>
+
+
+
+
+

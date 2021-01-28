@@ -1,0 +1,69 @@
+<view class="{{['data-v-4496cd9e',theme+'-page']}}">
+  <uni-bar vue-id="3db16520-1" theme="{{theme}}" class="data-v-4496cd9e" bind:__l="__l" vue-slots="{{['default']}}">
+    <nar-bar vue-id="{{('3db16520-2')+','+('3db16520-1')}}" type="home" fixed="true" class="data-v-4496cd9e" bind:__l="__l">
+
+    </nar-bar>
+    <view class="{{['bigContent data-v-4496cd9e',theme+'-title-color']}}">
+      <image class="bigImg data-v-4496cd9e" src="{{voddata.vod_pic}}" lazy-load="true" webp="{{true}}" data-event-opts="{{[['error',[['imgError',['$event']]]]]}}" binderror="__e"></image>
+      <view class="bigClass data-v-4496cd9e">
+        <text class="big_name ellipsis data-v-4496cd9e">{{''+voddata.vod_name}}</text>
+        <block wx:if="{{voddata.vod_remarks.length>3}}">
+          <text class="big_year ellipsis data-v-4496cd9e" style="color:rgba(255, 0, 4, 1);font-size:22rpx;">{{voddata.type_id==1?voddata.vod_remarks:'更新至'+voddata.vod_play_url[0][2]+'集'}}</text>
+        </block>
+        <text class="big_year ellipsis data-v-4496cd9e">{{"类型 : "+(voddata.vod_class?voddata.vod_class:"未知")}}</text>
+        <text class="big_year ellipsis data-v-4496cd9e">{{"演员 : "+(voddata.vod_actor?voddata.vod_actor:"未知")}}</text>
+        <text class="big_year ellipsis data-v-4496cd9e">{{voddata.vod_year+" / "+(voddata.vod_area?voddata.vod_area:"未知")+" / "+(voddata.vod_director?voddata.vod_director:"未知")}}</text>
+        <view class="big_button data-v-4496cd9e">
+          <button class="big_fx data-v-4496cd9e" open-type="share">
+          <view class="big_button_fx cuIcon-iconicon-test14 data-v-4496cd9e">分享</view>
+        </button>
+        <view data-event-opts="{{[['tap',[['haibao']]]]}}" class="big_button_sc cuIcon-iconzhangshangcaifuyemianshoujiban344-copy data-v-4496cd9e" bindtap="__e">海报</view>
+      </view>
+    </view>
+  </view>
+</uni-bar>
+
+<block wx:if="{{!WxVerify}}">
+  <view class="playView data-v-4496cd9e">
+    <view class="vodMsg data-v-4496cd9e">
+      <view class="vodScore data-v-4496cd9e">
+        <text class="vodScore_text data-v-4496cd9e">{{voddata.vod_score>0?'豆瓣:'+voddata.vod_score:'暂无评分'}}</text>
+        <block wx:if="{{voddata.vod_score>0}}">
+          <uni-rate vue-id="3db16520-3" disabled="true" value="{{voddata.vod_score/2}}" size="22" active-color="#f4d13a" color="#DADADA" class="data-v-4496cd9e" bind:__l="__l">
+          </uni-rate>
+        </block>
+      </view>
+      
+      <view class="vodWebkit data-v-4496cd9e"></view>
+      <view data-event-opts="{{[['tap',[['play']]]]}}" class="vodPlay data-v-4496cd9e" bindtap="__e">
+        <view class="cuIcon-iconbofang data-v-4496cd9e" style="color:#F8F8F8;font-size:45rpx;"></view>
+        <view class="vodSc data-v-4496cd9e">开始播放</view>
+      </view>
+    </view>
+  </view>
+</block>
+
+<block wx:if="{{wxAdId.ysId}}">
+  <custom-ad vue-id="3db16520-4" ysId="{{wxAdId.ysId}}" min="650" class="data-v-4496cd9e" bind:__l="__l"></custom-ad>
+</block>
+<view class="vod_content data-v-4496cd9e">
+  <view class="{{['vod_content_title cuIcon  data-v-4496cd9e',theme+'-title-color']}}">  影片简介</view>
+  <view class="vod_content_text data-v-4496cd9e">
+    <block wx:if="{{showContent}}">
+      <view class="data-v-4496cd9e">{{''+voddata.vod_content+''}}
+        <block wx:if="{{voddata.vod_content!==null&&voddata.vod_content.length>85}}">
+          <view data-event-opts="{{[['tap',[['contenTab',['$event']]]]]}}" class="vod_content_full cuIcon data-v-4496cd9e" bindtap="__e">收起 </view>
+        </block>
+      </view>
+    </block>
+    <block wx:else>
+      <view class="data-v-4496cd9e">
+        <text class="data-v-4496cd9e">{{voddata.vod_mincontent}}</text>
+        <block wx:if="{{voddata.vod_content!==null&&voddata.vod_content.length>85}}">
+          <view data-event-opts="{{[['tap',[['contenTab',['$event']]]]]}}" class="vod_content_full cuIcon data-v-4496cd9e" bindtap="__e">展开 </view>
+        </block>
+      </view>
+    </block>
+  </view>
+</view><view class="ad-view data-v-4496cd9e" style="width:700rpx;margin:0 auto;margin-bottom:20rpx;">
+  <block wx:if="{{gg.radio=='1'}}"><uni-ad vue-id="3db16520-5" gg="{{gg}}" class="data-v-4496cd9e" bind:__l="__l"></uni-ad></block></view><block wx:if="{{likeShow}}"><view class="douban data-v-4496cd9e"><block wx:if="{{photos.length>0}}"><view style="width:94%;margin:0 auto;" class="data-v-4496cd9e"><view class="{{['vod_content_title cuIcon  data-v-4496cd9e',theme+'-title-color']}}">  精彩剧照</view><view class="functionaryJob data-v-4496cd9e" style="height:340rpx;display:flex;overflow:auto;"><block wx:for="{{photos}}" wx:for-item="item" wx:for-index="index" wx:key="index"><view class="directors data-v-4496cd9e" style="display:flex;width:auto;"><view style="width:430rpx;height:272rpx;position:relative;margin-right:20rpx;" class="data-v-4496cd9e"><image style="width:430rpx;height:272rpx;border-radius:10rpx;" src="{{item}}" lazy-load="{{true}}" webp="{{true}}" data-event-opts="{{[['tap',[['showPhotos',[index]]]]]}}" bindtap="__e" class="data-v-4496cd9e"></image></view></view></block></view></view></block></view></block><block wx:if="{{likedata.length>0}}"><view class="data-v-4496cd9e"><view class="{{['vod_content_title cuIcon data-v-4496cd9e',theme+'-title-color']}}" style="margin-left:20rpx;">  精彩推荐</view><view class="like data-v-4496cd9e"><scroll-view class="likelist data-v-4496cd9e" scroll-x="true" show-scrollbar="false" enable-flex="{{true}}"><block wx:for="{{likedata}}" wx:for-item="item" wx:for-index="i" wx:key="i"><view data-event-opts="{{[['tap',[['getDate',['$0'],[[['likedata','',i,'vod_id']]]]]]]}}" class="likeitem data-v-4496cd9e" bindtap="__e"><vod-item vue-id="{{'3db16520-6-'+i}}" item="{{item}}" theme="{{theme}}" itemClick="{{itemClick}}" class="data-v-4496cd9e" bind:__l="__l"></vod-item></view></block></scroll-view></view></view></block><block wx:if="{{message}}"><message vue-id="3db16520-7" class="data-v-4496cd9e" bind:__l="__l"></message></block></view>

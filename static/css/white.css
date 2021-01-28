@@ -1,0 +1,32 @@
+.white-page{
+	background-color: #ffffff;
+	min-height: 100vh!important;
+}
+.white-title-color{
+	color: #2b2b2b;
+}
+.white-subtitle-color{
+	color: #b3b3b3;
+}
+.white-detailBg {
+	background: -webkit-linear-gradient(top,rgba(104, 130, 253, 1.0),rgba(104, 130, 253, 0.7), rgba(85, 170, 255, 0.05));
+  
+}
+.white-detailBgMax {
+	background: -webkit-linear-gradient(top,rgba(104, 130, 253, 1.0),rgba(104, 130, 253, 0.7));
+  
+}
+.white-bg1{
+	background-color: #ffffff;
+}
+.white-bg2{
+	background-color: #ffffff;
+}
+.white-bg3{
+	background-color: #F5F5F5;
+	color: #828282;
+}
+.white-loading{
+	background-color: #eeeeee;
+	color: #AAAAAA;
+}

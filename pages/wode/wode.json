@@ -1,0 +1,11 @@
+{
+  "navigationBarTitleText": "蘑菇影院",
+  "usingComponents": {
+    "uni-bar": "/components/uni-bar/uni-bar",
+    "nar-bar": "/components/narBar/narBar",
+    "uni-ad": "/components/uni-ad/uni-ad",
+    "custom-ad": "/components/custom-ad/custom-ad",
+    "uni-popup": "/components/uni-popup/uni-popup",
+    "popup": "/components/popup/popup"
+  }
+}

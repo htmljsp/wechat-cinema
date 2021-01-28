@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "custom-ad": "/components/custom-ad/custom-ad",
+    "trees": "/components/jyf-parser/libs/trees"
+  }
+}

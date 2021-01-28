@@ -1,0 +1,12 @@
+{
+  "navigationBarTitleText": "详情",
+  "usingComponents": {
+    "uni-bar": "/components/uni-bar/uni-bar",
+    "nar-bar": "/components/narBar/narBar",
+    "uni-rate": "/components/uni-rate/uni-rate",
+    "custom-ad": "/components/custom-ad/custom-ad",
+    "uni-ad": "/components/uni-ad/uni-ad",
+    "vod-item": "/components/vod-item/vod-item",
+    "message": "/components/message/message"
+  }
+}

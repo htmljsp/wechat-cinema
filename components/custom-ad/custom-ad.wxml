@@ -1,0 +1,1 @@
+<block wx:if="{{show}}"><view class="ad-ys-view" style="{{'width:'+(min+'rpx')+';'}}"><ad-custom vue-id="2a208202-1" unit-id="{{ysId}}" ad-intervals="100" data-event-opts="{{[['^error',[['binderror']]],['^load',[['bindload']]]]}}" bind:error="__e" bind:load="__e" bind:__l="__l"></ad-custom></view></block>

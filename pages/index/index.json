@@ -1,0 +1,12 @@
+{
+  "navigationBarTitleText": "首页",
+  "usingComponents": {
+    "uni-bar": "/components/uni-bar/uni-bar",
+    "nar-bar": "/components/narBar/narBar",
+    "uni-notice-bar": "/components/uni-notice-bar/uni-notice-bar",
+    "custom-ad": "/components/custom-ad/custom-ad",
+    "vod-item": "/components/vod-item/vod-item",
+    "struggler-uniapp-add-tip": "/components/struggler-uniapp-add-tip/struggler-uniapp-add-tip",
+    "uni-popup": "/components/uni-popup/uni-popup"
+  }
+}

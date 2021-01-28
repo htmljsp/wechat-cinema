@@ -1,0 +1,1 @@
+<view class="data-v-21c923e2"><view class="popup data-v-21c923e2"><text class="popup-title data-v-21c923e2">{{title}}</text><view class="popup-content data-v-21c923e2">{{content}}</view><view class="popup-button data-v-21c923e2"><slot name="left"></slot><slot name="content"></slot><slot name="right"></slot></view></view></view>

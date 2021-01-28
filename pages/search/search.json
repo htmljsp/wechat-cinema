@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "影片搜索",
+  "usingComponents": {
+    "uni-bar": "/components/uni-bar/uni-bar",
+    "custom-ad": "/components/custom-ad/custom-ad",
+    "shuvodlist": "/components/shuvodlist/shuvodlist"
+  }
+}

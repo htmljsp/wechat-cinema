@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "nar-bar": "/components/narBar/narBar",
+    "jyf-parser": "/components/jyf-parser/jyf-parser"
+  }
+}

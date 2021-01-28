@@ -1,0 +1,9 @@
+{
+  "enablePullDownRefresh": true,
+  "usingComponents": {
+    "uni-bar": "/components/uni-bar/uni-bar",
+    "nar-bar": "/components/narBar/narBar",
+    "custom-ad": "/components/custom-ad/custom-ad",
+    "vod-item": "/components/vod-item/vod-item"
+  }
+}

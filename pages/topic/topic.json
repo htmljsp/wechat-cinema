@@ -1,0 +1,7 @@
+{
+  "enablePullDownRefresh": true,
+  "usingComponents": {
+    "uni-bar": "/components/uni-bar/uni-bar",
+    "nar-bar": "/components/narBar/narBar"
+  }
+}

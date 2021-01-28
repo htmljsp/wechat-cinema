@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "影片历史",
+  "usingComponents": {
+    "uni-bar": "/components/uni-bar/uni-bar",
+    "nar-bar": "/components/narBar/narBar",
+    "custom-ad": "/components/custom-ad/custom-ad",
+    "shuvodlist": "/components/shuvodlist/shuvodlist",
+    "side-slip": "/components/side-slip/index"
+  }
+}

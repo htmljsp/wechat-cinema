@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "nar-bar": "/components/narBar/narBar",
+    "custom-ad": "/components/custom-ad/custom-ad",
+    "shuvodlist": "/components/shuvodlist/shuvodlist"
+  }
+}

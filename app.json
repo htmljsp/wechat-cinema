@@ -1,0 +1,68 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/detail/detail",
+    "pages/fenlei/fenlei",
+    "pages/kankan/kankan",
+    "pages/wode/wode",
+    "pages/history/history",
+    "pages/search/search",
+    "pages/web/web",
+    "pages/topic/topic",
+    "pages/art/art",
+    "pages/tuijian/tuijian",
+    "pages/richText/richText"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationStyle": "custom",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "",
+    "navigationBarBackgroundColor": "#323232",
+    "backgroundColor": "#323232"
+  },
+  "tabBar": {
+    "color": "#A9A9A9",
+    "selectedColor": "#f49c36",
+    "borderStyle": "black",
+    "backgroundColor": "#323232",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "static/tab/index1.png",
+        "selectedIconPath": "static/tab/index2.png"
+      },
+      {
+        "pagePath": "pages/fenlei/fenlei",
+        "text": "分类",
+        "iconPath": "static/tab/fenlei1.png",
+        "selectedIconPath": "static/tab/fenlei2.png"
+      },
+      {
+        "pagePath": "pages/search/search",
+        "text": "搜索",
+        "iconPath": "static/tab/sousuo1.png",
+        "selectedIconPath": "static/tab/sousuo2.png"
+      },
+      {
+        "pagePath": "pages/topic/topic",
+        "text": "专题",
+        "iconPath": "static/tab/faxian1.png",
+        "selectedIconPath": "static/tab/faxian2.png"
+      },
+      {
+        "pagePath": "pages/wode/wode",
+        "text": "我的",
+        "iconPath": "static/tab/wode1.png",
+        "selectedIconPath": "static/tab/wode2.png"
+      }
+    ]
+  },
+  "permission": {},
+  "uniStatistics": {
+    "enable": false
+  },
+  "usingComponents": {},
+  "sitemapLocation": "sitemap17.json"
+}

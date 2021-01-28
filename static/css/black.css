@@ -1,0 +1,32 @@
+.black-page{
+	background-color: #282828;
+    min-height: 100vh!important;
+}
+.black-title-color{
+	color: #dcdcdc;
+}
+.black-subtitle-color{
+	color: #ababab;
+}
+.black-detailBg {
+	background: -webkit-linear-gradient(top,rgba(50, 50, 50, 1.0), rgba(40, 40, 40,1.0), rgba(40, 40, 40,1.0));
+  
+}
+.black-detailBgMax {
+	background: -webkit-linear-gradient(top,rgba(50, 50, 50, 1.0),rgba(40, 40, 40,1.0));
+  
+}
+.black-bg1{
+	background-color: #282828;
+}
+.black-bg2{
+	background-color: #323232;
+}
+.black-bg3{
+	background-color: #323232;
+	color: #dedede;
+}
+.black-loading{
+	background-color: #323232;
+	color: #AAAAAA;
+}
